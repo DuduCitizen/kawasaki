@@ -1,0 +1,149 @@
+/* Layout */
+:root{
+    --preto: black;
+    --verde: #00B140;
+    --branco: white;
+    --cinzaMetalico: #A7A9AC;
+}
+
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Josefin Sans', 'Ubuntu';
+}
+
+.container{
+    display: flex;
+    margin: 0 auto;
+}
+/* Fim - Layout */
+
+
+/* Smartphone Portrait */
+
+/* Cabeçalho */
+header{
+    height: 100px;
+    background-color: var(--preto);
+    border-bottom: 2px solid var(--verde);
+}
+
+#logo img{
+    width: 150px;
+    padding-left: 20px;
+    padding-top: 40px;
+}
+
+#check{
+    display: none;
+}
+
+label{
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.8rem;
+    position: fixed;
+    right: 30px;
+    top: 28px;
+}
+
+/* Lista */
+nav ul{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 100px;
+    right: -30%;
+    width: 30%;
+    transition: all 0.5s;
+}
+
+/* Ação para a Checkbox*/
+/* Quando selecionado, muda as propriedades 'ul' */
+
+#check:checked~ul{
+    right: 0px;
+
+}
+
+nav ul li{
+    list-style: none;
+    padding: 20px;
+    border-bottom: 1px solid var(--cinzaMetalico);
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--verde);
+}
+/* Fim - Smartphone Portrait */
+
+
+/* Smartphone Landscape */
+@media (min-width: 576px){
+
+    /* Layout */
+    .container{
+        max-width: 540px;
+    }
+
+    /* Menu */
+    nav ul{
+        width: 25%;
+        right: -25%;
+    }
+}
+
+/* Fim - Smartphone Landscape */
+
+
+/* Tablet Portrait */
+@media (min-width: 768px){
+
+    /* Layout */
+    .container{
+        max-width: 720px;
+    }
+}
+
+/* Fim - Tablet Portrait */
+
+
+/* Tablet Landscape */
+@media (min-width: 992px){
+
+    /* Layout */
+    .container{
+        max-width: 960px;
+    }
+}
+
+/* Fim - Tablet Landscape */
+
+
+/* Notebook | PC */
+@media (min-width: 1200px){
+
+    /* Layout */
+    .container{
+        max-width: 1140px;
+    }
+}
+
+/* Fim - Notebook | PC */
+
+
+/* Full HD | 4K */
+@media (min-width: 1400px){
+
+    /* Layout */
+    .container{
+        max-width: 1320px;
+    }
+}
+
+/* Fim - Full HD | 4K*/
