@@ -7,4 +7,7 @@
 
 **Projeto acadêmico, feito para estudos**
 
+## Acessar o site
+![](./img/qrcode.png)
+
 **Autor:** [Lucas Eduardo](https://github.com/DuduCitizen)
