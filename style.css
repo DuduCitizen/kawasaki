@@ -170,6 +170,7 @@ nav ul li a{
 
     nav ul li a:hover{
         color: var(--verde);
+        transition: ease 0.5s;
     }
 
 }
