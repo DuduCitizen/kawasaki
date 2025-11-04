@@ -24,10 +24,10 @@ body{
 
 .btn{
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     font-weight: 700;
     background-color: var(--preto);
-    padding: 10px 30px;
+    padding: 10px 20px;
     color: var(--verde);
     border-radius: 25px;
     border: 1px solid var(--verde);
@@ -51,9 +51,9 @@ header{
 }
 
 #logo img{
-    width: 150px;
-    padding-left: 20px;
-    padding-top: 40px;
+    width: 50px;
+    margin-top: 25px;
+    margin-left: 50px;
 }
 
 #check{
@@ -84,7 +84,6 @@ nav ul{
 
 #check:checked~ul{
     right: 0px;
-
 }
 
 nav ul li{
@@ -117,6 +116,7 @@ main h1{
     color: var(--verde);
     text-shadow: 0px 5px 10px var(--cinzaMetalico),0px 10px 10px rgba(0, 0, 0, 0.15),0px 15px 15px rgba(0, 0, 0, 0.1),0px 20px 20px rgba(0, 0, 0, 0.1);
     margin: 20px;
+    font-size: 3rem;
 }
 
 main h2{
@@ -142,9 +142,22 @@ main h2{
         right: -25%;
     }
 
+
     /* Principal */
     main{
-        height: 80vh;
+        height: 100vh;
+    }
+
+    main h1{
+        font-size: 4.5rem;
+    }
+
+    main h2{
+        margin: 25px;
+    }
+
+    #logo img{
+        margin-left: -20px;
     }
 }
 
@@ -165,15 +178,20 @@ main h2{
     }
 
     main h1{
-        font-size: 5rem;
+        font-size: 8rem;
     }
 
     main h2{
         font-size: 2.5rem;
+        margin: 50px;
     }
 
     .btn{
         font-size: 2rem;
+    }
+
+    #logo img{
+        margin-left: 30px;
     }
 }
 
@@ -193,17 +211,22 @@ main h2{
         height: 90vh;
     }
 
-        main h1{
-        font-size: 6rem;
+    main h1{
+        font-size: 8rem;
     }
 
     main h2{
         font-size: 3rem;
+        margin: 50px;
     }
 
     .btn{
         font-size: 3rem;
         border-radius: 50px;
+    }
+
+    #logo img{
+        margin-left: -30px;
     }
 }
 
@@ -230,7 +253,7 @@ main h2{
     }
 
     #logo img{
-        width: 200px;
+        width: 250px;
         height: 70px;
         margin-top: 15px;
         margin-left: -20px;
@@ -263,6 +286,16 @@ main h2{
         transition: ease 0.5s;
     }
 
+    main h2{
+        margin: 50px;
+    }
+
+    #logo img{
+        width: 70px;
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+
 }
 
 /* Fim - Notebook | PC */
@@ -277,7 +310,22 @@ main h2{
     }
 
     main{
-        height: 100vh;
+        height: 110vh;
+    }
+
+    main h1{
+        font-size: 12rem;
+        margin: 50px;
+    }
+    
+    main h2{
+        margin: 50px;
+    }
+
+    #logo img{
+        width: 100px;
+        height: 100px;
+        margin-top: 25px;
     }
 }
 
