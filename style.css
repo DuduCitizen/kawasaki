@@ -21,6 +21,23 @@ body{
     display: flex;
     margin: 0 auto;
 }
+
+.btn{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    background-color: var(--preto);
+    padding: 10px 30px;
+    color: var(--verde);
+    border-radius: 25px;
+    border: 1px solid var(--verde);
+    margin-top: 20px; 
+}
+
+.btn:hover{
+    transition: ease 0.5s;
+    box-shadow: 0px 5px 10px var(--verde),0px 10px 10px rgba(0, 0, 0, 0.15),0px 15px 15px rgba(0, 0, 0, 0.1),0px 20px 20px rgba(0, 0, 0, 0.1);
+}
 /* Fim - Layout */
 
 
@@ -80,6 +97,34 @@ nav ul li a{
     text-decoration: none;
     color: var(--verde);
 }
+
+/* Principal */
+main{
+    height: 40vh;
+    background: url(./img/banner\ h2r.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+main .container{
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1{
+    color: var(--verde);
+    text-shadow: 0px 5px 10px var(--cinzaMetalico),0px 10px 10px rgba(0, 0, 0, 0.15),0px 15px 15px rgba(0, 0, 0, 0.1),0px 20px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+main h2{
+    color: var(--branco);
+    font-size: 1rem;
+}
+
+
 /* Fim - Smartphone Portrait */
 
 
@@ -96,6 +141,11 @@ nav ul li a{
         width: 25%;
         right: -25%;
     }
+
+    /* Principal */
+    main{
+        height: 80vh;
+    }
 }
 
 /* Fim - Smartphone Landscape */
@@ -107,6 +157,23 @@ nav ul li a{
     /* Layout */
     .container{
         max-width: 720px;
+    }
+
+    /* Principal */
+    main{
+      height: 60vh;  
+    }
+
+    main h1{
+        font-size: 5rem;
+    }
+
+    main h2{
+        font-size: 2.5rem;
+    }
+
+    .btn{
+        font-size: 2rem;
     }
 }
 
@@ -120,6 +187,24 @@ nav ul li a{
     .container{
         max-width: 960px;
     }
+
+    /* Principal */
+    main{
+        height: 90vh;
+    }
+
+        main h1{
+        font-size: 6rem;
+    }
+
+    main h2{
+        font-size: 3rem;
+    }
+
+    .btn{
+        font-size: 3rem;
+        border-radius: 50px;
+    }
 }
 
 /* Fim - Tablet Landscape */
@@ -127,6 +212,11 @@ nav ul li a{
 
 /* Notebook | PC */
 @media (min-width: 1200px){
+
+    /* Principal */
+    main{
+        height: 90vh;
+    }
 
     /* Layout */
     .container{
@@ -184,6 +274,10 @@ nav ul li a{
     /* Layout */
     .container{
         max-width: 1320px;
+    }
+
+    main{
+        height: 100vh;
     }
 }
 
