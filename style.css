@@ -523,6 +523,14 @@ main h2{
         border-radius: 50px;
     }
 
+    .btncat:hover{
+        transition: ease 0.5s;
+        box-shadow: 0px 5px 10px var(--verde),0px 10px 10px rgba(0, 0, 0, 0.15),0px 15px 15px rgba(0, 0, 0, 0.1),0px 20px 20px rgba(0, 0, 0, 0.1);
+        color: var(--preto);
+        background-color: var(--verde);
+        border: 1px solid var(--preto);
+    }
+
     #catalogo{
         background-attachment: fixed;
     }
