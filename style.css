@@ -130,22 +130,13 @@ main h2{
 /* Destaque */
 #destaque{
     padding: 50px 15px;
-    background: url(./img/parallax3.jpg);
+    background: url(./img/parallax.jpg);
     background-size: cover;
     background-position: center;
 }
 
 #destaque .container{
     flex-direction: column;
-}
-
-#hero{
-    text-align: center;
-}
-
-#hero img{
-    width: 230px;
-    margin-bottom: 30px;
 }
 
 #hero-text h2{
@@ -205,7 +196,7 @@ main h2{
 
 /* Catálogo */
 #catalogo{
-    background: url(./img/parallax3.jpg);
+    background: url(./img/parallax.jpg);
     display: flex;
     background-size: cover;
     background-position: center;
@@ -286,15 +277,6 @@ main h2{
     #destaque .container{
         flex-direction: row;
         align-items: center;
-    }
-
-    #hero{
-        text-align: left;
-    }
-
-    #hero img{
-        width: 170px;
-        margin: 0px 50px 0px 0px;
     }
 
     .topics{
