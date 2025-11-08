@@ -161,6 +161,7 @@ main h2{
     display: flex;
     align-items: center;
     margin-top: 15px;
+    font-weight: 700;
 }
 
 .topics a{
@@ -171,7 +172,7 @@ main h2{
 
 .topics a:hover{
     transition: ease 0.5s;
-    color: var(--cinzaMetalico);
+    color: var(--verde);
 }
 
 
