@@ -317,6 +317,29 @@ main h2{
         margin-left: 30px;
     }
 
+    /* Destaque */
+    #hero-text p{
+        margin-bottom: 40px;
+        font-weight: 700;
+    }
+
+    .topics{
+        display: flex;
+        margin-top: 15px;
+        font-weight: 700;
+    }
+
+    .topics a{
+        margin-left: 15px;
+        color: var(--branco);
+        text-decoration: none;
+    }
+
+    .topics a:hover{
+        transition: ease 0.5s;
+        color: var(--verde);
+    }
+
     /* Sobre */
     #video iframe{
     width: 400px;
