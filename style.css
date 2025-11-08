@@ -117,10 +117,11 @@ main .container{
 
 main h1{
     color: var(--verde);
-    text-shadow: 0px 5px 10px var(--cinzaMetalico),0px 10px 10px rgba(0, 0, 0, 0.15),0px 15px 15px rgba(0, 0, 0, 0.1),0px 20px 20px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 1px 10px var(--cinzaMetalico);
     margin: 20px;
     font-size: 1.7rem;
 }
+
 
 main h2{
     color: var(--branco);
@@ -190,7 +191,7 @@ main h2{
 #video iframe{
     width: 350px;
     height: 200px;
-    box-shadow: 5px 5px 15px var(--verde),0px 10px 10px rgba(0, 0, 0, 0.15),0px 15px 15px rgba(0, 0, 0, 0.1),0px 20px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 20px var(--verde);
     margin-bottom: 20px;
 }
 
@@ -479,6 +480,14 @@ main h2{
         width: 70px;
         margin-top: 40px;
         margin-left: 20px;
+    }
+
+    /* Main */
+    main h1:hover{
+    transition: ease-in-out 0.7s;
+    color: var(--preto);
+    text-shadow: 0px 0px 10px var(--verde);
+
     }
 
     /* Destaque */
