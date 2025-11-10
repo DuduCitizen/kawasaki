@@ -117,10 +117,11 @@ main .container{
 
 main h1{
     color: var(--verde);
-    text-shadow: 0px 5px 10px var(--cinzaMetalico),0px 10px 10px rgba(0, 0, 0, 0.15),0px 15px 15px rgba(0, 0, 0, 0.1),0px 20px 20px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 1px 10px var(--cinzaMetalico);
     margin: 20px;
     font-size: 1.7rem;
 }
+
 
 main h2{
     color: var(--branco);
@@ -130,22 +131,13 @@ main h2{
 /* Destaque */
 #destaque{
     padding: 50px 15px;
-    background: url(./img/parallax3.jpg);
+    background: url(./img/parallax.jpg);
     background-size: cover;
     background-position: center;
 }
 
 #destaque .container{
     flex-direction: column;
-}
-
-#hero{
-    text-align: center;
-}
-
-#hero img{
-    width: 230px;
-    margin-bottom: 30px;
 }
 
 #hero-text h2{
@@ -161,6 +153,7 @@ main h2{
     display: flex;
     align-items: center;
     margin-top: 15px;
+    font-weight: 700;
 }
 
 .topics a{
@@ -171,7 +164,7 @@ main h2{
 
 .topics a:hover{
     transition: ease 0.5s;
-    color: var(--cinzaMetalico);
+    color: var(--verde);
 }
 
 
@@ -198,13 +191,13 @@ main h2{
 #video iframe{
     width: 350px;
     height: 200px;
-    box-shadow: 5px 5px 15px var(--verde),0px 10px 10px rgba(0, 0, 0, 0.15),0px 15px 15px rgba(0, 0, 0, 0.1),0px 20px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 20px var(--verde);
     margin-bottom: 20px;
 }
 
 /* Catálogo */
 #catalogo{
-    background: url(./img/parallax3.jpg);
+    background: url(./img/parallax.jpg);
     display: flex;
     background-size: cover;
     background-position: center;
@@ -287,15 +280,6 @@ main h2{
         align-items: center;
     }
 
-    #hero{
-        text-align: left;
-    }
-
-    #hero img{
-        width: 170px;
-        margin: 0px 50px 0px 0px;
-    }
-
     .topics{
         display: none;
     }
@@ -332,6 +316,29 @@ main h2{
 
     #logo img{
         margin-left: 30px;
+    }
+
+    /* Destaque */
+    #hero-text p{
+        margin-bottom: 40px;
+        font-weight: 700;
+    }
+
+    .topics{
+        display: flex;
+        margin-top: 15px;
+        font-weight: 700;
+    }
+
+    .topics a{
+        margin-left: 15px;
+        color: var(--branco);
+        text-decoration: none;
+    }
+
+    .topics a:hover{
+        transition: ease 0.5s;
+        color: var(--verde);
     }
 
     /* Sobre */
@@ -473,6 +480,14 @@ main h2{
         width: 70px;
         margin-top: 40px;
         margin-left: 20px;
+    }
+
+    /* Main */
+    main h1:hover{
+    transition: ease-in-out 0.7s;
+    color: var(--preto);
+    text-shadow: 0px 0px 10px var(--verde);
+
     }
 
     /* Destaque */
