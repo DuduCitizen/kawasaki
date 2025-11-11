@@ -41,6 +41,27 @@ body{
     background-color: var(--verde);
     border: 1px solid var(--preto);
 }
+
+    /* Cartão */
+    .card{
+        width: 341px;
+        height: 520px;
+        background-color: var(--branco);
+        margin-bottom: 25px;
+        border: 2px solid var(--verde);
+        text-align: center;
+    }
+
+    .card h2{
+        font-size: 2rem;
+        margin: 15px 0px;
+    }
+
+    .card p{
+        margin: 20px 15px;
+        text-align: left;
+    }
+
 /* Fim - Layout */
 
 
@@ -235,6 +256,18 @@ main h2{
 }
 
 
+/* Cartões */
+#motos{
+    background-color: var(--preto);
+    padding: 50px 0px 25px 0px;
+}
+
+#motos .container{
+    flex-direction: column;
+    align-items: center;
+}
+
+
 /* Fim - Smartphone Portrait */
 
 
@@ -283,6 +316,7 @@ main h2{
     .topics{
         display: none;
     }
+
 }
 
 /* Fim - Smartphone Landscape */
@@ -413,7 +447,20 @@ main h2{
     #catalogo p{
         font-size: 1.5rem;
     }
+    /* Cartões */
+    #motos .container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
+    .card{
+        margin-right: 50px;
+    }
+
+    .card .btn{
+        font-size: 1.5rem;
+    }
 }
 
 /* Fim - Tablet Landscape */
