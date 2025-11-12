@@ -60,9 +60,10 @@ body{
 
     .card p{
         color: var(--branco);
-        margin: 20px 15px;
+        margin: 30px 15px;
         text-align: left;
     }
+
 
     /* Topo do site */
     #topo{
@@ -166,7 +167,7 @@ main h2{
 /* Destaque */
 #destaque{
     padding: 50px 15px;
-    background: url(./img/parallax.jpg);
+    background: url(./img/parallax.png);
     background-size: cover;
     background-position: center;
 }
@@ -232,7 +233,7 @@ main h2{
 
 /* Catálogo */
 #catalogo{
-    background: url(./img/parallax.jpg);
+    background: url(./img/parallax.png);
     display: flex;
     background-size: cover;
     background-position: center;
@@ -281,6 +282,7 @@ main h2{
     align-items: center;
 }
 
+
 /* Adress */
  #contato{
     display: flex;
@@ -313,17 +315,25 @@ main h2{
 /* footer */
 #rodape{
     background-color: var(--preto);
-    display: flex;
     border-top: 2px solid var(--verde);
+    text-align: center;
+}
+
+#rodape .container{
+    flex-direction: column-reverse;
 }
 
 #rodape p{
     color: var(--branco);
-    margin: 20px;
+    margin: 10px;
 }
 
-.redes {
-    margin: 20px;
+#rodape .redes {
+    margin: 5px;
+}
+
+#social{
+    margin-top: 20px;
 }
 
 
@@ -374,11 +384,6 @@ main h2{
 
     .topics{
         display: none;
-    }
-
-    /* Footer */
-    #rodape #copy{
-        margin-top: 15px;
     }
 
     /* Contato */
