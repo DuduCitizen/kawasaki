@@ -296,6 +296,11 @@ main h2{
     text-align: center;
 }
 
+#texto a{
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 0.8rem;
+}
 
 /* footer */
 #rodape{
@@ -669,8 +674,18 @@ main h2{
 
     #texto{
         margin-left: 50px;
-        margin-top: 100px;
+        margin-top: 70px;
     }
+
+    #texto a{
+        font-size: 1.5rem;
+    }
+
+    #texto a:hover{
+        color: var(--verde);
+        transition: ease-in-out 0.5s;
+    }
+
 }
 
 /* Fim - Notebook | PC */
