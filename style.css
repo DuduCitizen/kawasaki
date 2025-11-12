@@ -46,20 +46,34 @@ body{
     .card{
         width: 341px;
         height: 520px;
-        background-color: var(--branco);
+        background-color: var(--preto);
         margin-bottom: 25px;
         border: 2px solid var(--verde);
         text-align: center;
     }
 
     .card h2{
-        font-size: 2rem;
+        color: var(--verde);
+        font-size: 1.5rem;
         margin: 15px 0px;
     }
 
     .card p{
+        color: var(--branco);
         margin: 20px 15px;
         text-align: left;
+    }
+
+    /* Topo do site */
+    #topo{
+        position: fixed;
+        right: 15px;
+        bottom: 10px;
+    }
+
+    /* Scroll Suave */
+    html{
+        scroll-behavior: smooth;
     }
 
 /* Fim - Layout */
@@ -267,6 +281,38 @@ main h2{
     align-items: center;
 }
 
+/* Adress */
+ #contato{
+    display: flex;
+    background-color: var(--preto);
+ }
+
+#mapa iframe{
+    display: none;
+}
+
+#contato .container{
+    margin: 30px;
+    text-align: center;
+}
+
+
+/* footer */
+#rodape{
+    background-color: var(--preto);
+    display: flex;
+    border-top: 2px solid var(--verde);
+}
+
+#rodape p{
+    color: var(--branco);
+    margin: 20px;
+}
+
+.redes {
+    margin: 20px;
+}
+
 
 /* Fim - Smartphone Portrait */
 
@@ -315,6 +361,11 @@ main h2{
 
     .topics{
         display: none;
+    }
+
+    /* Footer */
+    #rodape #copy{
+        margin-top: 15px;
     }
 
 }
@@ -603,6 +654,23 @@ main h2{
     #catalogo{
         background-attachment: fixed;
     }
+
+    /* Contato */
+    #mapa iframe{
+        display: flex;
+        width: 300px;
+        height: 275px;
+        margin-left: 50px;
+    }
+
+    #mapa a{
+        display: none;
+    }
+
+    #texto{
+        margin-left: 50px;
+        margin-top: 100px;
+    }
 }
 
 /* Fim - Notebook | PC */
@@ -644,7 +712,10 @@ main h2{
         margin-right: 100px;
     }
 
-    /* Catálogo */
+    /* Contato */
+    #texto p{
+        font-size: 1.5rem;
+    }
 }
 
 /* Fim - Full HD | 4K*/
